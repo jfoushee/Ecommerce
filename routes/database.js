@@ -1,5 +1,5 @@
 const config = {
-  user: 'devchanic',
+  user: 'test',
   password: 'test',
   database: 'ecommerce_dev',
   driver: 'msnodesqlv8',
