@@ -1,0 +1,94 @@
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description' content='')
+    meta(name='author' content='Devchanics')
+    title Shop Homepage
+    // Bootstrap core CSS
+    link(href='stylesheets/vendor/bootstrap/css/bootstrap.min.css' rel='stylesheet')
+    // Custom styles for this template
+    link(href='stylesheets/css/shop-homepage.css' rel='stylesheet')
+  body
+    // Navigation
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+      .container
+        a.navbar-brand(href='#') Devchanics
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarResponsive.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item.active
+              a.nav-link(href='#')
+                | Home
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='#') About
+            li.nav-item
+              a.nav-link(href='#') Services
+            li.nav-item
+              a.nav-link(href='#') Contact
+    // Page Content
+    .container
+      .row
+        .placeholder(style='height: 100px;')
+      .row
+        .col-lg-2
+          // Button trigger modal
+          button.btn.btn-primary(type='button' data-toggle='modal' data-target='#Newproduct')
+            | Add Product
+          // Modal
+          #Newproduct.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true' style='margin: auto;')
+            .modal-dialog(role='document')
+              .modal-content
+                .modal-header
+                  h5#exampleModalLabel.modal-title Add New Product
+                  button.close(type='button' data-dismiss='modal' aria-label='Close')
+                    span(aria-hidden='true') ×
+                form(action='/add' method='POST' enctype="multipart/form-data")
+                  .modal-body
+                    .row
+                      .col-lg-4 Product Name: 
+                      input.col-lg-6(type="text", name="prdName")
+                    .row(style='padding-top: 5px;')
+                      .col-lg-4 Description: 
+                      input.col-lg-6(type="text", name="prdDescription")
+                    .row(style='padding-top: 5px;')
+                      .col-lg-4 Price: 
+                      input.col-lg-2(type="number", name="prdPrice" step="any" style="text-align: center;")
+                    .row(style='padding-top: 5px;')
+                      .col-lg-4 Detail: 
+                      input.col-lg-6(type="text", name="prdDetail")
+                    .row(style='padding-top: 5px;')
+                        label.col-lg-4 Images:
+                        input.form-control-file.col-lg-6(type="file", name="prdImage" id='image' multiple style='padding: 0px')
+                  .modal-footer
+                    button.btn.btn-secondary(type='button' data-dismiss='modal') Close
+                    button.btn.btn-primary(type='submit' value="submit_value") Save changes
+        .col-lg-9
+          .row
+            each val, index in data
+              .col-lg-4.col-md-6.mb-4
+                .card
+                  a(href='#')
+                    img.card-img-top(src='http://placehold.it/700x400' alt='')
+                  .card-body
+                    h4.card-title
+                      a(href='#') #{data[index].prdName}
+                    h5 $#{data[index].prdPrice}
+                    p.card-text
+                      | #{data[index].prdDescription}
+                  .card-footer
+                    small.text-muted ★ ★ ★ ★ ☆
+          // /.row
+          // /.col-lg-9
+          // /.row
+          // /.container
+          // Footer
+          footer.py-5.bg-dark
+            .container
+              p.m-0.text-center.text-white Copyright © Your Website 2020
+            // /.container
+            // Bootstrap core JavaScript
+            script(src='stylesheets/vendor/jquery/jquery.min.js')
+            script(src='stylesheets/vendor/bootstrap/js/bootstrap.bundle.min.js')

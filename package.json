@@ -1,0 +1,25 @@
+{
+  "name": "ecommerce",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "prod": "node server.js",
+    "test": "node server.js -- --staging"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "debug": "^2.6.9",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.2.1",
+    "express-session": "^1.17.1",
+    "greenlock-express": "^4.0.3",
+    "http-errors": "^1.6.3",
+    "jade": "^1.11.0",
+    "memorystore": "^1.6.4",
+    "morgan": "^1.9.1",
+    "msnodesqlv8": "^2.0.11",
+    "mssql": "^6.3.1",
+    "stripe": "^8.137.0"
+  }
+}

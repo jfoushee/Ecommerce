@@ -1,0 +1,1021 @@
+doctype html
+html(lang='en')
+  head
+    meta(http-equiv='Content-Type' content='text/html; charset=UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width,initial-scale=1')
+    meta(name='description' content='multikart')
+    meta(name='keywords' content='multikart')
+    meta(name='author' content='multikart')
+    link(rel='icon' href='/images/theme/favicon/1.png' type='image/x-icon')
+    link(rel='shortcut icon' href='/images/theme/favicon/1.png' type='image/x-icon')
+    title Multikart - Multi-purpopse E-commerce Html Template
+    // Google font
+    link(href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet')
+    // Icons
+    link(rel='stylesheet' type='text/css' href='/stylesheets/css/fontawesome.css')
+    // Slick slider css
+    link(rel='stylesheet' type='text/css' href='/stylesheets/css/slick.css')
+    link(rel='stylesheet' type='text/css' href='/stylesheets/css/slick-theme.css')
+    // Animate icon
+    link(rel='stylesheet' type='text/css' href='/stylesheets/css/animate.css')
+    // Themify icon
+    link(rel='stylesheet' type='text/css' href='/stylesheets/css/themify-icons.css')
+    // Bootstrap css
+    link(rel='stylesheet' type='text/css' href='/stylesheets/css/bootstrap.css')
+    // Theme css
+    link#color(rel='stylesheet' type='text/css' href='/stylesheets/css/color1.css' media='screen')
+  body
+    // header start
+    header
+      .mobile-fix-option
+      .top-header
+        .container
+          .row
+            .col-lg-6
+              .header-contact
+                ul
+                  li Welcome to Our store Multikart
+                  li
+                    i.fa.fa-phone(aria-hidden='true')
+                    | Call Us: 123 - 456 - 7890
+            .col-lg-6.text-right
+              ul.header-dropdown
+                li.mobile-wishlist
+                  a(href='#')
+                    i.fa.fa-heart(aria-hidden='true')
+                li.onhover-dropdown.mobile-account
+                  i.fa.fa-user(aria-hidden='true')
+                  |  My Account
+                  ul.onhover-show-div
+                    li
+                      a(href='/dashboard' data-lng='en')
+                        | Login
+                    li
+                      a(href='#' data-lng='es')
+                        | Logout
+      .container
+        .row
+          .col-sm-12
+            .main-menu
+              .menu-left
+                .navbar
+                  a(href='javascript:void(0)' onclick='openNav()')
+                    .bar-style
+                      i.fa.fa-bars.sidebar-bar(aria-hidden='true')
+                  #mySidenav.sidenav
+                    a.sidebar-overlay(href='javascript:void(0)' onclick='closeNav()')
+                    nav
+                      div(onclick='closeNav()')
+                        .sidebar-back.text-left
+                          i.fa.fa-angle-left.pr-2(aria-hidden='true')
+                          |  Back
+                      // Vertical Menu
+                      ul#sub-menu.sm.pixelstrap.sm-vertical
+                        li
+                          a(href='#') clothing
+                          ul.mega-menu.clothing-menu
+                            li
+                              .row.m-0
+                                .col-xl-4
+                                  .link-section
+                                    h5 women's fashion
+                                    ul
+                                      li
+                                        a(href='#') dresses
+                                      li
+                                        a(href='#') skirts
+                                      li
+                                        a(href='#') westarn wear
+                                      li
+                                        a(href='#') ethic wear
+                                      li
+                                        a(href='#') sport wear
+                                    h5 men's fashion
+                                    ul
+                                      li
+                                        a(href='#') sports wear
+                                      li
+                                        a(href='#') western wear
+                                      li
+                                        a(href='#') ethic wear
+                                .col-xl-4
+                                  .link-section
+                                    h5 accessories
+                                    ul
+                                      li
+                                        a(href='#') fashion jewellery
+                                      li
+                                        a(href='#') caps and hats
+                                      li
+                                        a(href='#') precious jewellery
+                                      li
+                                        a(href='#') necklaces
+                                      li
+                                        a(href='#') earrings
+                                      li
+                                        a(href='#') wrist wear
+                                      li
+                                        a(href='#') ties
+                                      li
+                                        a(href='#') cufflinks
+                                      li
+                                        a(href='#') pockets squares
+                                .col-xl-4
+                                  a.mega-menu-banner(href='#')
+                                    img.img-fluid.blur-up.lazyload(src='/images/theme/mega-menu/fashion.jpg' alt='')
+                        li
+                          a(href='#') bags
+                          ul
+                            li
+                              a(href='#') shopper bags
+                            li
+                              a(href='#') laptop bags
+                            li
+                              a(href='#') clutches
+                            li
+                              a(href='#') purses
+                              ul
+                                li
+                                  a(href='#') purses
+                                li
+                                  a(href='#') wallets
+                                li
+                                  a(href='#') leathers
+                                li
+                                  a(href='#') satchels
+                        li
+                          a(href='#') footwear
+                          ul
+                            li
+                              a(href='#') sport shoes
+                            li
+                              a(href='#') formal shoes
+                            li
+                              a(href='#') casual shoes
+                        li
+                          a(href='#') watches
+                        li
+                          a(href='#') Accessories
+                          ul
+                            li
+                              a(href='#') fashion jewellery
+                            li
+                              a(href='#') caps and hats
+                            li
+                              a(href='#') precious jewellery
+                            li
+                              a(href='#') more..
+                              ul
+                                li
+                                  a(href='#') necklaces
+                                li
+                                  a(href='#') earrings
+                                li
+                                  a(href='#') wrist wear
+                                li
+                                  a(href='#') accessories
+                                  ul
+                                    li
+                                      a(href='#') ties
+                                    li
+                                      a(href='#') cufflinks
+                                    li
+                                      a(href='#') pockets squares
+                                    li
+                                      a(href='#') helmets
+                                    li
+                                      a(href='#') scarves
+                                    li
+                                      a(href='#') more...
+                                      ul
+                                        li
+                                          a(href='#') accessory gift sets
+                                        li
+                                          a(href='#') travel accessories
+                                        li
+                                          a(href='#') phone cases
+                                li
+                                  a(href='#') belts & more
+                                li
+                                  a(href='#') wearable
+                        li
+                          a(href='#') house of design
+                        li
+                          a(href='#') beauty & personal care
+                          ul
+                            li
+                              a(href='#') makeup
+                            li
+                              a(href='#') skincare
+                            li
+                              a(href='#') premium beaty
+                            li
+                              a(href='#') more
+                              ul
+                                li
+                                  a(href='#') fragrances
+                                li
+                                  a(href='#') luxury beauty
+                                li
+                                  a(href='#') hair care
+                                li
+                                  a(href='#') tools & brushes
+                        li
+                          a(href='#') home & decor
+                        li
+                          a(href='#') kitchen
+                .brand-logo
+                  a(href='/')
+                    img.img-fluid.blur-up.lazyload(src='/images/theme/icon/logo.png' alt='')
+              .menu-right.pull-right
+                div
+                  nav#main-nav
+                    .toggle-nav
+                      i.fa.fa-bars.sidebar-bar
+                    // Horizontal menu
+                    ul#main-menu.sm.pixelstrap.sm-horizontal
+                      li
+                        .mobile-back.text-right
+                          | Back
+                          i.fa.fa-angle-right.pl-2(aria-hidden='true')
+                      li
+                        a(href='/') Home
+                      li
+                        a(href='/shop') Shop
+                      li
+                        a(href='/about') About
+                      li
+                        a(href='/blog') Blog
+                div
+                  .icon-nav
+                    ul
+                      li.onhover-div.mobile-cart
+                        div
+                            a(href='/cart')
+                                img.img-fluid.blur-up.lazyload(src='/images/theme/icon/cart.png' alt='')
+                                i.ti-shopping-cart
+                        ul.show-div.shopping-cart
+                          span(id='cartList')
+                            if cart.items.length == 0
+                                li
+                                    .media
+                                    a(href='#')
+                                        //- img.mr-3(src='' alt='Generic placeholder image')
+                                        //- #{cart.items[index].image}
+                                    .media-body
+                                        a(href='#')
+                                        h4 Cart is Empty
+                                        h4
+                                        span 
+                                    .close-circle
+                                    a(href='#')
+                                        i.fa.fa-times(aria-hidden='true')
+                            else
+                              each val, index in cart.items
+                                  li
+                                    .media
+                                      a(href='#')
+                                          img.mr-3(src='' alt='')
+                                          //- #{cart.items[index].image}
+                                      .media-body
+                                        a(href='#')
+                                          h4 #{cart.items[index].Name}
+                                          h4
+                                            span #{cart.items[index].quantity} X $#{cart.items[index].price.toFixed(2)}
+                                    .close-circle
+                                      a(onclick='deleteCartItem(#{index})' class='deleteCart')
+                                          i.fa.fa-times(aria-hidden='true')
+                          li
+                              .total
+                                  h5
+                                      | subtotal : 
+                                      span(id='cartTotal') $#{cart.total.toFixed(2)}
+                          li
+                            .buttons
+                              a.view-cart(href='/cart') view cart
+                              a.checkout(href='/checkout') checkout
+    // header end
+    // breadcrumb start
+    .breadcrumb-section
+      .container
+        .row
+          .col-sm-6
+            .page-title
+              h2 cart
+          .col-sm-6
+            nav.theme-breadcrumb(aria-label='breadcrumb')
+              ol.breadcrumb
+                li.breadcrumb-item
+                  a(href='/') Home
+                li.breadcrumb-item.active cart
+    // breadcrumb End
+    // section start
+    section.cart-section.section-b-space
+      .container
+        .row
+          .col-sm-12
+            table.table.cart-table.table-responsive-xs
+              thead
+                tr.table-head
+                  th(scope='col') image
+                  th(scope='col') product name
+                  th(scope='col') price
+                  th(scope='col') quantity
+                  th(scope='col') action
+                  th(scope='col') total
+                each val, index in cart.items
+                    tbody
+                        tr
+                            td
+                                a(href='#')
+                                    img(src='/images/theme/pro3/1.jpg' alt='')
+                            td
+                                a(href='#') #{cart.items[index].Name}
+                                .mobile-cart-content.row
+                                    .col-xs-3
+                                        .qty-box
+                                            .input-group
+                                                input.form-control.input-number(type='number' name='quantity' value='#{cart.items[index].quantity}')
+                                    .col-xs-3
+                                        h2.td-color $#{cart.items[index].price.toFixed(2)}
+                                    .col-xs-3
+                                        h2.td-color
+                                        a.icon(href='#')
+                                            i.ti-close
+                            td
+                                h2(id='price#{cart.items[index].id}') $#{cart.items[index].price.toFixed(2)}
+                            td
+                                .qty-box
+                                    .input-group
+                                        input.form-control.input-number(id='quantity#{cart.items[index].id}' type='number' name='quantity#{cart.items[index].id}' value='#{cart.items[index].quantity}')
+                            td
+                                a.icon(href='#')
+                                i.ti-close
+                            td
+                                - let subtotal = cart.items[index].price * cart.items[index].quantity
+                                    h2.td-color(id='subtotal#{cart.items[index].id}')
+                                        |$#{subtotal.toFixed(2)}
+            table.table.cart-table.table-responsive-md
+              tfoot
+                tr
+                  td total price :
+                  td
+                    h2 $#{cart.total.toFixed(2)}
+        .row.cart-buttons
+          .col-6
+            a.btn.btn-solid(href='/shop') continue shopping
+          .col-6
+            a.btn.btn-solid(href='/checkout') check out
+    // section end
+    // footer start
+    footer.footer-light
+      .light-layout
+        .container
+          section.small-section.border-section.border-top-0
+            .row
+              .col-lg-6
+                .subscribe
+                  div
+                    h4 KNOW IT ALL FIRST!
+                    p Never Miss Anything From Multikart By Signing Up To Our Newsletter.
+              .col-lg-6
+                form#mc-embedded-subscribe-form.form-inline.subscribe-form.auth-form.needs-validation(action='https://pixelstrap.us19.list-manage.com/subscribe/post?u=5a128856334b598b395f1fc9b&id=082f74cbda' method='post' name='mc-embedded-subscribe-form' target='_blank')
+                  .form-group.mx-sm-3
+                    input#mce-EMAIL.form-control(type='text' name='EMAIL' placeholder='Enter your email' required='required')
+                  button#mc-submit.btn.btn-solid(type='submit') subscribe
+      section.section-b-space.light-layout
+        .container
+          .row.footer-theme.partition-f
+            .col-lg-4.col-md-6
+              .footer-title.footer-mobile-title
+                h4 about
+              .footer-contant
+                .footer-logo
+                  img(src='/images/theme/icon/logo.png' alt='')
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  | ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                .footer-social
+                  ul
+                    li
+                      a(href='#')
+                        i.fa.fa-facebook(aria-hidden='true')
+                    li
+                      a(href='#')
+                        i.fa.fa-google-plus(aria-hidden='true')
+                    li
+                      a(href='#')
+                        i.fa.fa-twitter(aria-hidden='true')
+                    li
+                      a(href='#')
+                        i.fa.fa-instagram(aria-hidden='true')
+                    li
+                      a(href='#')
+                        i.fa.fa-rss(aria-hidden='true')
+            .col.offset-xl-1
+              .sub-title
+                .footer-title
+                  h4 my account
+                .footer-contant
+                  ul
+                    li
+                      a(href='#') mens
+                    li
+                      a(href='#') womens
+                    li
+                      a(href='#') clothing
+                    li
+                      a(href='#') accessories
+                    li
+                      a(href='#') featured
+            .col
+              .sub-title
+                .footer-title
+                  h4 why we choose
+                .footer-contant
+                  ul
+                    li
+                      a(href='#') shipping & return
+                    li
+                      a(href='#') secure shopping
+                    li
+                      a(href='#') gallary
+                    li
+                      a(href='#') affiliates
+                    li
+                      a(href='#') contacts
+            .col
+              .sub-title
+                .footer-title
+                  h4 store information
+                .footer-contant
+                  ul.contact-list
+                    li
+                      i.fa.fa-map-marker
+                      | Multikart Demo Store, Demo store India 345-659
+                    li
+                      i.fa.fa-phone
+                      | Call Us: 123-456-7898
+                    li
+                      i.fa.fa-envelope-o
+                      | Email Us: Support@Fiot.com
+                    li
+                      i.fa.fa-fax
+                      | Fax: 123456
+      .sub-footer
+        .container
+          .row
+            .col-xl-6.col-md-6.col-sm-12
+              .footer-end
+                p
+                  i.fa.fa-copyright(aria-hidden='true')
+                  |  2017-18 themeforest powered by
+                  |                                 pixelstrap
+            .col-xl-6.col-md-6.col-sm-12
+              .payment-card-bottom
+                ul
+                  li
+                    a(href='#')
+                      img(src='/images/theme/icon/visa.png' alt='')
+                  li
+                    a(href='#')
+                      img(src='/images/theme/icon/mastercard.png' alt='')
+                  li
+                    a(href='#')
+                      img(src='/images/theme/icon/paypal.png' alt='')
+                  li
+                    a(href='#')
+                      img(src='/images/theme/icon/american-express.png' alt='')
+                  li
+                    a(href='#')
+                      img(src='/images/theme/icon/discover.png' alt='')
+    // footer end
+    // theme setting
+    a(href='javascript:void(0)' onclick='openSetting()')
+      #setting-icon.setting-sidebar
+        div
+          i.fa.fa-cog(aria-hidden='true')
+    #setting_box.setting-box
+      a.overlay(href='javascript:void(0)' onclick='closeSetting()')
+      .setting_box_body
+        div(onclick='closeSetting()')
+          .sidebar-back.text-left
+            i.fa.fa-angle-left.pr-2(aria-hidden='true')
+            |  Back
+        .setting-body
+          .setting-title
+            h4 layout
+          .setting-contant
+            .row.demo-section
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo1
+                  .demo-text
+                    h4 Fashion
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('/')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo43
+                    .ribbon-1
+                      span n
+                      span e
+                      span w
+                  .demo-text
+                    h4 game
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('game.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo44
+                    .ribbon-1
+                      span n
+                      span e
+                      span w
+                  .demo-text
+                    h4 gym
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('gym-product.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo45
+                    .ribbon-1
+                      span n
+                      span e
+                      span w
+                  .demo-text
+                    h4 tools
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('tools.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo46
+                    .ribbon-1
+                      span n
+                      span e
+                      span w
+                  .demo-text
+                    h4 marijuana
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('marijuana.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo47
+                    .ribbon-1
+                      span n
+                      span e
+                      span w
+                  .demo-text
+                    h4 metro
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('metro.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo48
+                    .ribbon-1
+                      span n
+                      span e
+                      span w
+                  .demo-text
+                    h4 pets
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('pets.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo49
+                    .ribbon-1
+                      span n
+                      span e
+                      span w
+                  .demo-text
+                    h4 video slider
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('video-slider.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo50
+                    .ribbon-1
+                      span n
+                      span e
+                      span w
+                  .demo-text
+                    h4 left menu
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('left_sidebar-demo.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo51
+                    .ribbon-1
+                      span n
+                      span e
+                      span w
+                  .demo-text
+                    h4 jewellery
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('jewellery.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo2
+                  .demo-text
+                    h4 Fashion
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('fashion-2.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo3
+                  .demo-text
+                    h4 Fashion
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('fashion-3.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo4
+                  .demo-text
+                    h4 Shoes
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('shoes.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo5
+                  .demo-text
+                    h4 Bags
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('bags.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo6
+                  .demo-text
+                    h4 Watch
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('watch.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo7
+                  .demo-text
+                    h4 Kids
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('kids.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo8
+                  .demo-text
+                    h4 Flower
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('flower.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo9
+                  .demo-text
+                    h4 Nursery
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('nursery.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo10
+                  .demo-text
+                    h4 Vegetables
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('vegetables.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo11
+                  .demo-text
+                    h4 Beauty
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('beauty.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo12
+                  .demo-text
+                    h4 Instagram Shop
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('instagram-shop.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects.effect-2
+                .set-position
+                  .layout-container.demo13
+                  .demo-text
+                    h4 Lookbook
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('lookbook-demo.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo14
+                  .demo-text
+                    h4 Light
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('light.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo15
+                  .demo-text
+                    h4 Full Page
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('full-page.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo16
+                  .demo-text
+                    h4 Electronic-1
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('electronic-1.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo17
+                  .demo-text
+                    h4 Electronic-2
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('electronic-2.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects.effect-2
+                .set-position
+                  .layout-container.demo18
+                  .demo-text
+                    h4 Video
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('video.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo19
+                  .demo-text
+                    h4 Goggles
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('goggles.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects.mb-0
+                .set-position
+                  .layout-container.demo20
+                  .demo-text
+                    h4 Parallax
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('parallax.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects.mb-0
+                .set-position
+                  .layout-container.demo21
+                  .demo-text
+                    h4 Furniture
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('furniture.html')") Preview
+          .setting-title
+            h4 shop
+          .setting-contant
+            .row.demo-section
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo22
+                  .demo-text
+                    h4 left sidebar
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('category-page.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo24
+                  .demo-text
+                    h4 right sidebar
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('category-page(right).html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo23
+                  .demo-text
+                    h4 no sidebar
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('category-page(no-sidebar).html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo25
+                  .demo-text
+                    h4 popup
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('category-page(sidebar-popup).html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo52
+                    .ribbon-1
+                      span n
+                      span e
+                      span w
+                  .demo-text
+                    h4 metro
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('category-page(metro).html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo53
+                    .ribbon-1
+                      span n
+                      span e
+                      span w
+                  .demo-text
+                    h4 full width
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('category-page(full-width).html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo26
+                  .demo-text
+                    h4 infinite scroll
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('category-page(infinite-scroll).html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo54
+                  .demo-text
+                    h4 three grid
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('category-page(3-grid).html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects.mb-0
+                .set-position
+                  .layout-container.demo55
+                  .demo-text
+                    h4 six grid
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('category-page(6-grid).html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects.mb-0
+                .set-position
+                  .layout-container.demo56
+                  .demo-text
+                    h4 list view
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('category-page(list-view).html')") Preview
+          .setting-title
+            h4 product
+          .setting-contant
+            .row.demo-section
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo40
+                    .ribbon-1
+                      span n
+                      span e
+                      span w
+                  .demo-text
+                    h4 four image 
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('product-page(4-image).html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo33
+                  .demo-text
+                    h4 left sidebar
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('product-page.html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo36
+                  .demo-text
+                    h4 right sidebar
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('product-page(right-sidebar).html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo34
+                  .demo-text
+                    h4 no sidebar
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('product-page(no-sidebar).html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo41
+                    .ribbon-1
+                      span n
+                      span e
+                      span w
+                  .demo-text
+                    h4 bundle
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('product-page(bundle).html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo42
+                    .ribbon-1
+                      span n
+                      span e
+                      span w
+                  .demo-text
+                    h4 image swatch
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('product-page(image-swatch).html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo32
+                  .demo-text
+                    h4 left image
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('product-page(left-image).html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo35
+                  .demo-text
+                    h4 right image
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('product-page(right-image).html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo31
+                    .ribbon-1
+                      span n
+                      span e
+                      span w
+                  .demo-text
+                    h4 image outside
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('product-page(image-outside).html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo27
+                  .demo-text
+                    h4 3-col left
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('product-page(3-col-left).html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo28
+                  .demo-text
+                    h4 3-col right
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('product-page(3-col-right).html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo29
+                  .demo-text
+                    h4 3-col bottom
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('product-page(3-column).html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo37
+                  .demo-text
+                    h4 sticky
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('product-page(sticky).html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects
+                .set-position
+                  .layout-container.demo30
+                  .demo-text
+                    h4 accordian
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('product-page(accordian).html')") Preview
+              .col-sm-6.col-12.text-center.demo-effects.mb-0
+                .set-position
+                  .layout-container.demo38
+                  .demo-text
+                    h4 vertical tab
+                    .btn-group.demo-btn(role='group' aria-label='Basic example')
+                      button.btn.new-tab-btn(type='button' onclick="window.open('product-page(vertical-tab).html')") Preview
+          .setting-title
+            h4 color picker
+          .setting-contant
+            ul.color-box
+              li
+                input#ColorPicker1(type='color' value='#ff4c3b' name='Background')
+                span theme deafult color
+          .setting-title
+            h4 RTL
+          .setting-contant
+            ul.setting_buttons
+              li#ltr_btn.active
+                a.btn.setting_btn(href='javascript:void(0)') LTR
+              li#rtl_btn
+                a.btn.setting_btn(href='javascript:void(0)') RTL
+          .buy_btn
+            a.btn.btn-block.purchase_btn(href='https://themeforest.net/item/multikart-responsive-ecommerce-html-template/22809967?s_rank=1' target='_blank')
+              i.fa.fa-shopping-cart(aria-hidden='true')
+              |  purchase Multikart now!
+            a.btn.btn-block.purchase_btn(href='https://themeforest.net/item/multikart-responsive-angular-ecommerce-template/22905358?s_rank=3' target='_blank')
+              img.img-fluid(src='/images/theme/icon/angular.png' alt='')
+              |  Multikart Angular
+            a.btn.btn-block.purchase_btn(href='https://themeforest.net/item/multikart-responsive-react-ecommerce-template/23067773?s_rank=2' target='_blank')
+              img.img-fluid(src='/images/theme/icon/react.png' alt='')
+              |  Multikart React
+            a.btn.btn-block.purchase_btn(href='https://themeforest.net/item/multikart-multipurpose-shopify-sections-theme/23093831?s_rank=1' target='_blank')
+              img.img-fluid(src='/images/theme/icon/shopify.png' alt='')
+              |  Multikart Shopify
+    // theme setting
+    // tap to top start
+    .tap-top
+      div
+        i.fa.fa-angle-double-up
+    // latest jquery
+    script(src='/javascripts/js/jquery-3.3.1.min.js')
+    // menu js
+    script(src='/javascripts/js/menu.js')
+    // lazyload js
+    script(src='/javascripts/js/lazysizes.min.js')
+    // popper js
+    script(src='/javascripts/js/popper.min.js')
+    // slick js
+    script(src='/javascripts/js/slick.js')
+    // Bootstrap js
+    script(src='/javascripts/js/bootstrap.js')
+    // Bootstrap Notification js
+    script(src='/javascripts/js/bootstrap-notify.min.js')
+    // Theme js
+    script(src='/javascripts/js/script.js')
+    //Cart Js
+    script(src='/javascripts/shoppingCart.js')
+    script.
+      function openSearch() {
+      document.getElementById("search-overlay").style.display = "block";
+      }
+      function closeSearch() {
+      document.getElementById("search-overlay").style.display = "none";
+      }

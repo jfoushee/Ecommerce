@@ -1,0 +1,405 @@
+doctype html
+html(lang='en')
+  head
+    meta(http-equiv='Content-Type' content='text/html; charset=UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(name='description' content='Multikart admin is super flexible, powerful, clean & modern responsive bootstrap 4 admin template with unlimited possibilities.')
+    meta(name='keywords' content='admin template, Multikart admin template, dashboard template, flat admin template, responsive admin template, web app')
+    meta(name='author' content='pixelstrap')
+    link(rel='icon' href='/images/theme/dashboard/favicon.png' type='image/x-icon')
+    link(rel='shortcut icon' href='/images/theme/dashboard/favicon.png' type='image/x-icon')
+    title Multikart - Premium Admin Template
+    // Google font
+    link(href='https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i' rel='stylesheet')
+    // Font Awesome
+    link(rel='stylesheet' type='text/css' href='/stylesheets/css/fontawesome.css')
+    // Flag icon
+    link(rel='stylesheet' type='text/css' href='/stylesheets/css/flag-icon.css')
+    // Dropzone css
+    link(rel='stylesheet' type='text/css' href='/stylesheets/css/dropzone.css')
+    // Bootstrap css
+    link(rel='stylesheet' type='text/css' href='/stylesheets/css/bootstrap.css')
+    // App css
+    link(rel='stylesheet' type='text/css' href='/stylesheets/css/admin.css')
+    link(rel='stylesheet' type='text/css' href='/stylesheets/css/uploader.css')
+  body
+    // page-wrapper Start
+    .page-wrapper
+      // Page Header Start
+      .page-main-header
+        .main-header-right.row
+          .main-header-left.d-lg-none
+            .logo-wrapper
+              a(href='/')
+                img.blur-up.lazyloaded(src='/images/theme/dashboard/multikart-logo.png' alt='')
+          .mobile-sidebar
+            .media-body.text-right.switch-sm
+              label.switch
+                a(href='#')
+                  i#sidebar-toggle(data-feather='align-left')
+          .nav-right.col
+            ul.nav-menus
+              li
+                form.form-inline.search-form
+                  .form-group
+                    input.form-control-plaintext(type='search' placeholder='Search..')
+                    span.d-sm-none.mobile-search
+                      i(data-feather='search')
+              li
+                a.text-dark(href='#!' onclick='javascript:toggleFullScreen()')
+                  i(data-feather='maximize-2')
+              li.onhover-dropdown
+                a.txt-dark(href='#')
+                  h6 EN
+                ul.language-dropdown.onhover-show-div.p-20
+                  li
+                    a(href='#' data-lng='en')
+                      i.flag-icon.flag-icon-is
+                      |  English
+                  li
+                    a(href='#' data-lng='es')
+                      i.flag-icon.flag-icon-um
+                      |  Spanish
+                  li
+                    a(href='#' data-lng='pt')
+                      i.flag-icon.flag-icon-uy
+                      |  Portuguese
+                  li
+                    a(href='#' data-lng='fr')
+                      i.flag-icon.flag-icon-nz
+                      |  French
+              li.onhover-dropdown
+                i(data-feather='bell')
+                span.badge.badge-pill.badge-primary.pull-right.notification-badge 3
+                span.dot
+                ul.notification-dropdown.onhover-show-div.p-0
+                  li
+                    | Notification 
+                    span.badge.badge-pill.badge-primary.pull-right 3
+                  li
+                    .media
+                      .media-body
+                        h6.mt-0
+                          span
+                            i.shopping-color(data-feather='shopping-bag')
+                          | Your order ready for Ship..!
+                        p.mb-0 Lorem ipsum dolor sit amet, consectetuer.
+                  li
+                    .media
+                      .media-body
+                        h6.mt-0.txt-success
+                          span
+                            i.download-color.font-success(data-feather='download')
+                          | Download Complete
+                        p.mb-0 Lorem ipsum dolor sit amet, consectetuer.
+                  li
+                    .media
+                      .media-body
+                        h6.mt-0.txt-danger
+                          span
+                            i.alert-color.font-danger(data-feather='alert-circle')
+                          | 250 MB trash files
+                        p.mb-0 Lorem ipsum dolor sit amet, consectetuer.
+                  li.bg-light.txt-dark
+                    a(href='#') All
+                    |  notification
+              li
+                a(href='#')
+                  i.right_side_toggle(data-feather='message-square')
+                  span.dot
+              li.onhover-dropdown
+                .media.align-items-center
+                  img.align-self-center.pull-right.img-50.rounded-circle.blur-up.lazyloaded(src='/images/theme/dashboard/man.png' alt='header-user')
+                  .dotted-animation
+                    span.animate-circle
+                    span.main-circle
+                ul.profile-dropdown.onhover-show-div.p-20
+                  li
+                    a(href='#')
+                      i(data-feather='user')
+                      | Edit Profile
+                  li
+                    a(href='#')
+                      i(data-feather='mail')
+                      | Inbox
+                  li
+                    a(href='#')
+                      i(data-feather='lock')
+                      | Lock Screen
+                  li
+                    a(href='#')
+                      i(data-feather='settings')
+                      | Settings
+                  li
+                    a(href='#')
+                      i(data-feather='log-out')
+                      | Logout
+            .d-lg-none.mobile-toggle.pull-right
+              i(data-feather='more-horizontal')
+      // Page Header Ends
+      // Page Body Start
+      .page-body-wrapper
+        // Page Sidebar Start
+        .page-sidebar
+          .main-header-left.d-none.d-lg-block
+            .logo-wrapper
+              a(href='/')
+                img.blur-up.lazyloaded(src='/images/theme/dashboard/multikart-logo.png' alt='')
+          .sidebar.custom-scrollbar
+            .sidebar-user.text-center
+              div
+                img.img-60.rounded-circle(src='/images/theme/dashboard/man.png' alt='#')
+              h6.mt-3.f-14 JOHN
+              p general manager.
+            ul.sidebar-menu
+              li
+                a.sidebar-header(href='/dashboard')
+                  i(data-feather='home')
+                  span Dashboard
+              li
+                a.sidebar-header(href='#')
+                  i(data-feather='box')
+                  span Products
+                  i.fa.fa-angle-right.pull-right
+                ul.sidebar-submenu
+                    li
+                      a(href='/dashboard/addproduct')
+                        i.fa.fa-circle
+                        | Add Product
+                    li
+                        a(href='/dashboard/productlist')
+                          i.fa.fa-circle
+                          | Product List
+              li
+                a.sidebar-header(href='')
+                  i(data-feather='dollar-sign')
+                  span Sales
+                  i.fa.fa-angle-right.pull-right
+                ul.sidebar-submenu
+                  li
+                    a(href='/dashboard/orders')
+                      i.fa.fa-circle
+                      | Orders
+                  li
+                    a(href='/dashboard/transactions')
+                      i.fa.fa-circle
+                      | Transactions
+        // Page Sidebar Ends
+        // Right sidebar Start
+        //- #right_side_bar.right-sidebar
+        //-   div
+        //-     .container.p-0
+        //-       .modal-header.p-l-20.p-r-20
+        //-         .col-sm-8.p-0
+        //-           h6.modal-title.font-weight-bold FRIEND LIST
+        //-         .col-sm-4.text-right.p-0
+        //-           i.mr-2(data-feather='settings')
+        //-     .friend-list-search.mt-0
+        //-       input(type='text' placeholder='search friend')
+        //-       i.fa.fa-search
+        //-     .p-l-30.p-r-30
+        //-       .chat-box
+        //-         .people-list.friend-list
+        //-           ul.list
+        //-             li.clearfix
+        //-               img.rounded-circle.user-image.blur-up.lazyloaded(src='/images/theme/dashboard/user.png' alt='')
+        //-               .status-circle.online
+        //-               .about
+        //-                 .name Vincent Porter
+        //-                 .status  Online
+        //-             li.clearfix
+        //-               img.rounded-circle.user-image.blur-up.lazyloaded(src='/images/theme/dashboard/user1.jpg' alt='')
+        //-               .status-circle.away
+        //-               .about
+        //-                 .name Ain Chavez
+        //-                 .status  28 minutes ago
+        //-             li.clearfix
+        //-               img.rounded-circle.user-image.blur-up.lazyloaded(src='/images/theme/dashboard/user2.jpg' alt='')
+        //-               .status-circle.online
+        //-               .about
+        //-                 .name Kori Thomas
+        //-                 .status  Online
+        //-             li.clearfix
+        //-               img.rounded-circle.user-image.blur-up.lazyloaded(src='/images/theme/dashboard/user3.jpg' alt='')
+        //-               .status-circle.online
+        //-               .about
+        //-                 .name Erica Hughes
+        //-                 .status  Online
+        //-             li.clearfix
+        //-               img.rounded-circle.user-image.blur-up.lazyloaded(src='/images/theme/dashboard/man.png' alt='')
+        //-               .status-circle.offline
+        //-               .about
+        //-                 .name Ginger Johnston
+        //-                 .status  2 minutes ago
+        //-             li.clearfix
+        //-               img.rounded-circle.user-image.blur-up.lazyloaded(src='/images/theme/dashboard/user5.jpg' alt='')
+        //-               .status-circle.away
+        //-               .about
+        //-                 .name Prasanth Anand
+        //-                 .status  2 hour ago
+        //-             li.clearfix
+        //-               img.rounded-circle.user-image.blur-up.lazyloaded(src='/images/theme/dashboard/designer.jpg' alt='')
+        //-               .status-circle.online
+        //-               .about
+        //-                 .name Hileri Jecno
+        //-                 .status  Online
+        // Right sidebar Ends
+        .page-body
+          // Container-fluid starts
+          .container-fluid
+            .page-header
+              .row
+                .col-lg-6
+                  .page-header-left
+                    h3
+                      | Add Products
+                      small Multikart Admin panel
+                .col-lg-6
+                  ol.breadcrumb.pull-right
+                    li.breadcrumb-item
+                      a(href='/')
+                        i(data-feather='home')
+                    li.breadcrumb-item Digital
+                    li.breadcrumb-item.active Add Product
+          // Container-fluid Ends
+          // Container-fluid starts
+          .container-fluid
+            form(action='/add' method='POST' enctype="multipart/form-data")  
+              .row.product-adding
+                .col-xl-6
+                  .card
+                    .card-header
+                      h5 General
+                    .card-body
+                      .digital-add.needs-validation
+                        .form-group
+                          label.col-form-label.pt-0(for='validationCustom01')
+                            span *
+                            |  Product Name
+                          input#validationCustom01.form-control(type="text", name="prdName" required='')
+                        .form-group
+                          label.col-form-label.pt-0(for='validationCustomtitle')
+                            span *
+                            |  SKU
+                          input#validationCustomtitle.form-control(type='text' required='' disabled='true')
+                        .form-group
+                          label.col-form-label
+                            span *
+                            |  Categories
+                          select.custom-select(required='' disabled='true')
+                            option(value='') --Select--
+                            option(value='1') eBooks
+                            option(value='2') Graphic Design
+                            option(value='3') 3D Impact
+                            option(value='4') Application
+                            option(value='5') Websites
+                        .form-group
+                          label.col-form-label Details
+                          textarea(rows='5' cols='12' disabled='true' name="prdDetail")
+                        .form-group
+                          label.col-form-label(for='validationCustom02')
+                            span *
+                            |  Product Price
+                          input#validationCustom02.form-control(type="number", name="prdPrice" step="any" required='' )
+                        .form-group
+                          label.col-form-label
+                            span *
+                            |  Status
+                          .m-checkbox-inline.mb-0.custom-radio-ml.d-flex.radio-animated
+                            label.d-block(for='edo-ani')
+                              input#edo-ani.radio_animated(type='radio' name='rdo-ani')
+                              |                                                 Enable
+                            label.d-block(for='edo-ani1')
+                              input#edo-ani1.radio_animated(type='radio' name='rdo-ani')
+                              |                                                 Disable
+                        label.col-form-label.pt-0  Product Upload
+                          .upload
+                              .upload-files
+                                  header
+                                      p
+                                        i.fa.fa-cloud-upload(aria-hidden='true')
+                                        span.up up
+                                        span.load load
+                                  #drop.body
+                                      i.fa.fa-file-text-o.pointer-none(aria-hidden='true')
+                                      p.pointer-none
+                                        b Drag and drop
+                                        |  files here 
+                                        br
+                                        |  or 
+                                        a#triggerFile(href='') browse
+                                        |  to begin the upload
+                                      input(type='file' name='prdImage' multiple='multiple')
+                                  footer
+                                      .divider
+                                        span
+                                        ar FILES
+                                      .list-files
+                                        // template
+                                      button.importar UPDATE FILES
+                .col-xl-6
+                  .card
+                    .card-header
+                      h5 Add Description
+                    .card-body
+                      .digital-add.needs-validation
+                        .form-group.mb-0
+                          .description-sm
+                            textarea#editor1(cols='10' rows='4' name="prdDescription")
+                  .card
+                    .card-header
+                      h5 Meta Data
+                    .card-body
+                      .digital-add.needs-validation
+                        .form-group
+                          label.col-form-label.pt-0(for='validationCustom05')  Meta Title
+                          input#validationCustom05.form-control(type='text' required='')
+                        .form-group
+                          label.col-form-label Meta Description
+                          textarea(rows='4' cols='12')
+                        .form-group.mb-0
+                          .product-buttons.text-center
+                            button.btn.btn-primary(type='submit' value="submit_value") Add
+                            button.btn.btn-light(type='button') Discard
+          // Container-fluid Ends
+          // footer start
+          footer.footer
+            .container-fluid
+              .row
+                .col-md-6.footer-copyright
+                  p.mb-0 Copyright 2019 © Multikart All rights reserved.
+                .col-md-6
+                  p.pull-right.mb-0
+                    | Hand crafted & made with
+                    i.fa.fa-heart
+          // footer end
+          // latest jquery
+          script(src='/javascripts/js/jquery-3.3.1.min.js')
+          //-script(src='/javascripts/js/jquery-3.6.0.min.js')
+          // Bootstrap js
+          script(src='/javascripts/js/popper.min.js')
+          script(src='/javascripts/js/bootstrap.js')
+          // feather icon js
+          script(src='/javascripts/js/icons/feather-icon/feather.min.js')
+          script(src='/javascripts/js/icons/feather-icon/feather-icon.js')
+          // Sidebar jquery
+          script(src='/javascripts/js/sidebar-menu.js')
+          // dropzone js
+          //-script(src='/javascripts/js/dropzone/dropzone.js')
+          //-script(src='/javascripts/js/dropzone/dropzone-script.js')
+          // ckeditor js
+          script(src='/javascripts/js/editor/ckeditor/ckeditor.js')
+          script(src='/javascripts/js/editor/ckeditor/styles.js')
+          script(src='/javascripts/js/editor/ckeditor/adapters/jquery.js')
+          script(src='/javascripts/js/editor/ckeditor/ckeditor.custom.js')
+          // Customizer admin
+          //- script(src='/javascripts/js/admin-customizer.js')
+          // lazyload js
+          script(src='/javascripts/js/lazysizes.min.js')
+          // right sidebar js
+          script(src='/javascripts/js/chat-menu.js')
+          // script admin
+          script(src='/javascripts/js/admin-script.js')
+          script(src='/javascripts/js/uploader.js')

@@ -1,0 +1,169 @@
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description' content='')
+    meta(name='author' content='Devchanics')
+    title Shop Homepage
+    // Bootstrap core CSS
+    link(href='stylesheets/vendor/bootstrap/css/bootstrap.min.css' rel='stylesheet')
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous")
+    // Custom styles for this template
+    link(href='stylesheets/css/shop-homepage.css' rel='stylesheet')
+  body()
+    // Navigation
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+      .container
+        a.navbar-brand(href='#') Devchanics
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarResponsive.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item.active
+              a.nav-link(href='#')
+                | Home
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='#') About
+            li.nav-item
+              a.nav-link(href='#') Services
+            li.nav-item
+              a.nav-link(href='#') Contact
+        .dropdown
+          button#CartMenu.btn.btn-primary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+            | Cart
+          ul.dropdown-menu(aria-labelledby='CartMenu' id='cart')
+            each val, index in cart.items 
+              li
+                .dropdown-item #{cart.items[index].Name}, #{cart.items[index].price}, #{cart.items[index].quantity}
+            li
+              a.dropdown-item(href='#') Total #{cart.total}
+    // Page Content
+    .container
+      .row
+        .col-lg-3
+          h1.my-4 Shop Name
+          .list-group
+            a.list-group-item(href='#') Category 1
+            a.list-group-item(href='#') Category 2
+            a.list-group-item(href='#') Category 3
+            br
+            a.btn.btn-primary(href="/admin")
+              | Admin Panel
+            br
+            a.btn.btn-primary(href="/checkout")
+              | Checkout
+        // /.col-lg-3
+        .col-lg-9
+          #carouselExampleIndicators.carousel.slide.my-4(data-ride='carousel')
+            ol.carousel-indicators
+              li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+              li(data-target='#carouselExampleIndicators' data-slide-to='1')
+              li(data-target='#carouselExampleIndicators' data-slide-to='2')
+            .carousel-inner(role='listbox')
+              .carousel-item.active
+                img.d-block.img-fluid(src='http://placehold.it/900x350' alt='First slide')
+              .carousel-item
+                img.d-block.img-fluid(src='http://placehold.it/900x350' alt='Second slide')
+              .carousel-item
+                img.d-block.img-fluid(src='http://placehold.it/900x350' alt='Third slide')
+            a.carousel-control-prev(href='#carouselExampleIndicators' role='button' data-slide='prev')
+              span.carousel-control-prev-icon(aria-hidden='true')
+              span.sr-only Previous
+            a.carousel-control-next(href='#carouselExampleIndicators' role='button' data-slide='next')
+              span.carousel-control-next-icon(aria-hidden='true')
+              span.sr-only Next
+          .row
+            each val, index in data
+              .col-lg-4.col-md-6.mb-4
+                .card
+                  form(action='/product' method='post')
+                    a(href='javascript:;' onClick='parentNode.submit();')
+                      img.card-img-top(src='http://placehold.it/700x400' alt='')
+                    input(type='hidden' name='prdID' value='#{data[index].prdID}')
+                  .card-body
+                    h4.card-title
+                      form(action='/product' method='post')
+                        a(href='javascript:;' onClick='parentNode.submit();') #{data[index].prdName}
+                        input(type='hidden' name='prdID' value='#{data[index].prdID}')
+                    h5 $#{data[index].prdPrice}
+                    p.card-text
+                      | #{data[index].prdDescription}
+                  .card-footer
+                    button.btn.btn-primary(onClick='addCartItem("#{data[index].prdName}",1,1,null, #{data[index].prdID});')
+                      | Add to Cart
+                    br
+                    small.text-muted ★ ★ ★ ★ ☆
+            //- .col-lg-4.col-md-6.mb-4
+            //-   .card.h-100
+            //-     a(href='#')
+            //-       img.card-img-top(src='http://placehold.it/700x400' alt='')
+            //-     .card-body
+            //-       h4.card-title
+            //-         a(href='#') Item Two
+            //-       h5 $24.99
+            //-       p.card-text
+            //-         | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.
+            //-     .card-footer
+            //-       small.text-muted ★ ★ ★ ★ ☆
+            //- .col-lg-4.col-md-6.mb-4
+            //-   .card.h-100
+            //-     a(href='#')
+            //-       img.card-img-top(src='http://placehold.it/700x400' alt='')
+            //-     .card-body
+            //-       h4.card-title
+            //-         a(href='#') Item Three
+            //-       h5 $24.99
+            //-       p.card-text
+            //-         | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
+            //-     .card-footer
+            //-       small.text-muted ★ ★ ★ ★ ☆
+            //- .col-lg-4.col-md-6.mb-4
+            //-   .card.h-100
+            //-     a(href='#')
+            //-       img.card-img-top(src='http://placehold.it/700x400' alt='')
+            //-     .card-body
+            //-       h4.card-title
+            //-         a(href='#') Item Four
+            //-       h5 $24.99
+            //-       p.card-text
+            //-         | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
+            //-     .card-footer
+            //-       small.text-muted ★ ★ ★ ★ ☆
+            //- .col-lg-4.col-md-6.mb-4
+            //-   .card.h-100
+            //-     a(href='#')
+            //-       img.card-img-top(src='http://placehold.it/700x400' alt='')
+            //-     .card-body
+            //-       h4.card-title
+            //-         a(href='#') Item Five
+            //-       h5 $24.99
+            //-       p.card-text
+            //-         | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.
+            //-     .card-footer
+            //-       small.text-muted ★ ★ ★ ★ ☆
+            //- .col-lg-4.col-md-6.mb-4
+            //-   .card.h-100
+            //-     a(href='#')
+            //-       img.card-img-top(src='http://placehold.it/700x400' alt='')
+            //-     .card-body
+            //-       h4.card-title
+            //-         a(href='#') Item Six
+            //-       h5 $24.99
+            //-       p.card-text
+            //-         | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
+            //-     .card-footer
+            //-       small.text-muted ★ ★ ★ ★ ☆
+          // /.row
+          // /.col-lg-9
+          // /.row
+          // /.container
+          // Footer
+          footer.py-5.bg-dark
+            .container
+              p.m-0.text-center.text-white Copyright © Your Website 2020
+            // /.container
+            // Bootstrap core JavaScript
+            script(src='stylesheets/vendor/jquery/jquery.min.js')
+            script(src='stylesheets/vendor/bootstrap/js/bootstrap.bundle.min.js')
+            script(src="javascripts/shoppingCart.js")
